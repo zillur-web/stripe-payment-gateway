@@ -14,7 +14,7 @@
  //    }
 
     // YOUR_DOMAIN
-    $YOUR_DOMAIN = 'http://localhost/stripe-payment-gateway';
+    $YOUR_DOMAIN = $_SERVER['REQUEST_SCHEME'] . '://'.$_SERVER['HTTP_HOST'].'/';
     // set your currency here defalt
     $STRIPE_CURRENCY = 'usd';
     // payment_method_types using array
